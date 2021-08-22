@@ -1,9 +1,8 @@
 <h2>发表文章</h2>
 <ul>
-    <li><label for="">标题：</label><input type="text"></li>
-    <li><label for="">标签：</label><input type="text"></li>
-    <li><label for="">内容：</label><br><textarea name="" id="" cols="100" rows="20"></textarea></li>
+    <li><label for="nameL">标题：</label><input id="nameL" type="text" [(ngModel)]="artPut.title"></li>
+    <li><label for="name">标签：</label><input id="name" type="text" [(ngModel)]="artPut.tag"></li>
+    <li><label for="nameB">内容：</label><br><textarea name="" id="nameB" cols="100" rows="20" [(ngModel)]="artPut.content"></textarea></li>
 </ul>
 
-<input type="submit" value="发布文章">
-
+<input type="submit" value="发布文章" (click)="report()">
