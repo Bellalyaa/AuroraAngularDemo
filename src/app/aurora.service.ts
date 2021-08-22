@@ -5,7 +5,19 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class AuroraService {
-  public getAriticleUrl = 'api/Home/GetArticle'; 
+  public getArticleUrl:string = 'http://localhost:5000/api/Home/GetArticle';
+  private loginUrl = 'http://localhost:5000/api/Auth/Login'
+
+
+  public token:string = '';
+
+
+
+
+
+
+
+
 
   constructor(private http: HttpClient) { }
 }

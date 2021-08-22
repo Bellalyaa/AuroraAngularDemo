@@ -16,6 +16,8 @@ import { ContentRecommendComponent } from './content-recommend/content-recommend
 import { ContentArticleComponent } from './content-article/content-article.component';
 import { PubComponent } from './pub/pub.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RegisterComponent } from './register/register.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { HttpClientModule } from '@angular/common/http';
     ContentRankingComponent,
     ContentRecommendComponent,
     ContentArticleComponent,
-    PubComponent
+    PubComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

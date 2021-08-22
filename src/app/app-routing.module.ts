@@ -4,6 +4,7 @@ import { ContentsComponent } from './contents/contents.component';
 import { PubComponent } from './pub/pub.component';
 import { ContentArticleComponent } from './content-article/content-article.component';
 import { HomeComponent } from './content-home/home.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/contents', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
     ],
   },
   { path: 'pub', component: PubComponent },
+  { path: 'register', component:RegisterComponent}
 ];
 
 @NgModule({
